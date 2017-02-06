@@ -2,12 +2,12 @@
 
 ARDUINO_TIMEOUT timeout;
 
-void setup (void)
+void setup ()
 {
   timeout.reset();
 }
 
-void loop (void)
+void loop ()
 {
   if(timeout.check(5000)){
     //Write code here for timeout process.
