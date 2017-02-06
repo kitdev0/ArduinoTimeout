@@ -1,6 +1,6 @@
 #include "ArduinoTimeout.h"
 
-ArduinoTimeout timeout;
+ARDUINO_TIMEOUT timeout;
 
 void setup (void)
 {

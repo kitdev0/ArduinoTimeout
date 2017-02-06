@@ -1,16 +1,16 @@
 #include "ArduinoTimeout.h"
 
-ArduinoTimeout::ArduinoTimeout()
+ARDUINO_TIMEOUT::ARDUINO_TIMEOUT()
 {
 
 }
 
-void ArduinoTimeout::reset(void)
+void ARDUINO_TIMEOUT::reset(void)
 {
 	previous_time = millis();
 }
 
-bool ArduinoTimeout::check(uint32_t _time)
+bool ARDUINO_TIMEOUT::check(uint32_t _time)
 {
 	if (millis() < previous_time)
 		reset();

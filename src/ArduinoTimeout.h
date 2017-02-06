@@ -1,19 +1,19 @@
 
-#ifndef _ArduinoTimeout_h
-#define _ArduinoTimeout_h
+#ifndef _ARDUINO_TIMEOUT_h
+#define _ARDUINO_TIMEOUT_h
 
 #include "Arduino.h"
 
-class ArduinoTimeout
+class ARDUINO_TIMEOUT
 {
 private:
 	uint32_t previous_time = 0;
 
 public:
-	ArduinoTimeout();
+	ARDUINO_TIMEOUT();
 	void reset(void);
 	bool check(uint32_t _time);
 };
 
 
-#endif
+#endif //_ARDUINO_DEBUG_h
